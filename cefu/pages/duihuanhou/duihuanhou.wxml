@@ -1,0 +1,35 @@
+<!--pages/duihuanhou/duihuanhou.wxml-->
+<!--pages/shopduihuan/shopduihuan.wxml-->
+<view class="top">
+  <view class="box" wx:for="{{list}}">
+    <view class="boxleft">
+      <image src="{{item.detail[0].image}}"></image>
+    </view>
+    <view class="boxright">
+      <text class="boxrightop">{{item.detail[0].goodsname}}</text>
+      <view>
+              <view class="two {{item.intstatus==1?'':'light'}}"  data-status="{{item.intstatus}}" bindtap="erweima">{{item.intstatus==1?'待领取':'已领取'}}</view>
+
+        <text>1件</text>
+        <text>{{item.detail[0].price}}积分</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="duihuan">
+  <!-- <view class="duihuantop">二维码</view>
+   <view class="duihuanbottom2">到店出示二维码，核销领取奖品</view> -->
+<!-- <view class="duihuanbottom">
+
+</view> -->
+</view>
+<image class="imgerwei" src="http://qr.liantu.com/api.php?text=15291856676" hidden="{{!change}}" bindtap="erweima2"></image>
+<view class="black" bindtap="erweima2" hidden="{{!change}}"></view>
+
+
+
+<view class="none" hidden="{{none}}">
+  <image mode="widthFix" src="../../imgs/noneBg.png"></image>
+
+
+</view>

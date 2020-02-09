@@ -1,0 +1,39 @@
+<!--pages/tousu/tousu.wxml-->
+<form bindsubmit="formSubmit">
+
+  <view class="container">
+      <view class="box">
+      <view>选择门店:</view>
+      <view class='select_box'>
+        <view class='select' catchtap='selectTap'>
+          <text class='select_text'>{{selectData[index].name}}</text>
+          <!-- <image class='select_img {{selectShow&&"select_img_rotate"}}' src='../../images/b2.png'  background-size="contain"></image>  -->
+        </view>
+        <view class='option_box' style='height:{{selectShow?(selectData.length>5?325:selectData.length*80):0}}rpx;'>
+          <text class='option' wx:for='{{selectData}}' wx:key='{{index}}' data-index='{{index}}' data-id="{{item.id}}" catchtap='optionTap'>{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='stars'>
+      <view class='content'>
+        <view>服务态度</view>
+        <view>
+          <view wx:for="{{stars}}" wx:key="index" style='background:url("{{item.flag==1?item.bgImg:item.bgfImg}}") no-repeat top; background-size:100%;' data-index="{{index}}" data-id="{{index+1}}" bindtap='score'></view>
+        </view>
+      </view>
+    </view>
+    <view class='stars'>
+      <view class='content'>
+        <view>店面形象</view>
+        <view>
+          <view wx:for="{{stars2}}" wx:key="index" style='background:url("{{item.flag==1?item.bgImg:item.bgfImg}}") no-repeat top; background-size:100%;' data-index="{{index}}" data-id="{{index+1}}" bindtap='score2'></view>
+        </view>
+      </view>
+    </view>
+
+    <view class='reviews'>
+      <textarea placeholder='请写下购买体会或商品的相关信息，可以拉其他小伙伴提供参考~（评价在100字以内）' bindblur="text"></textarea>
+    </view>
+  </view>
+  <button class="tijiao" form-type="submit">提交反馈</button>
+</form>

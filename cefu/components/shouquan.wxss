@@ -1,0 +1,58 @@
+/* 登录授权页 */
+.login{
+  width:100%;
+  height:100%;
+  background:black;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  top:0rpx;
+  left:0rpx;
+  z-index: 1000;
+}
+.login .loginbox{
+  width:90%;
+  height:700rpx;
+  margin:184rpx auto; 
+  background:white;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size:30rpx;
+  color:rgba(110, 108, 108, 0.829);
+  z-index: 999;
+}
+.login .loginbox view{
+  z-index: 999;
+  width:98%;
+  height:300rpx;
+  margin:28rpx auto;
+}
+.login .loginbox view image{
+  width:100%;
+  height:300rpx;
+}
+.login .loginbox text:nth-child(1){
+  font-size:40rpx;
+  color:black;
+  font-weight: 600;
+  margin-bottom:30rpx;
+  margin-top:20rpx;
+}
+.login .loginbox text:nth-child(2){
+  margin-bottom:30rpx;
+}
+.login .loginbox text:nth-child(3){
+  margin-bottom:30rpx;
+}
+.login .loginbox button{
+  width:98%;
+  height:100rpx;
+  margin:10rpx auto;
+  background:rgba(191, 194, 191, 0.719);
+  color:white;
+  background:#e1c57b;
+}
+.login2{
+  display: none;
+}

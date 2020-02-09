@@ -1,0 +1,335 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.2",
+	"appid": "wx02fdd3086606bf47",
+	"projectname": "xiweinuo%E6%B5%8B%E6%9C%8D",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 39,
+			"list": [
+				{
+					"id": -1,
+					"name": "第二个页面",
+					"pathName": "pages/baoming/baoming",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "第三个页面",
+					"pathName": "pages/zhongchou/zhongchou",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "第四个页面",
+					"pathName": "pages/findzhongchou/findzhongchou",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "第二个页面",
+					"pathName": "pages/personal/personal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "支持页面",
+					"pathName": "pages/support/support",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "imed",
+					"pathName": "pages/immediate/immediate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "admin",
+					"pathName": "pages/admin/admin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "backstage",
+					"pathName": "pages/backstage/backstage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "门店",
+					"pathName": "pages/mendian/mendian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "兑换",
+					"pathName": "pages/change/change",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "积分礼品商城",
+					"pathName": "pages/score/score",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商品详情",
+					"pathName": "pages/mydetail/mydetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "预约到店",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "开通会员",
+					"pathName": "pages/kaitong/kaitong",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "积分明细",
+					"pathName": "pages/jiscore/jiscore",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "余额明细",
+					"pathName": "pages/yumoney/yumoney",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "附近门店",
+					"pathName": "pages/fujin/fujin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/shopcar/shopcar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "好友推荐",
+					"pathName": "pages/tuijian/tuijian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "门店上层",
+					"pathName": "pages/mendiantop/mendiantop",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页商品详情页",
+					"pathName": "pages/mydetail/mydetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "第一次进",
+					"pathName": "pages/mendianfirsttop/mendianfirsttop",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "投诉",
+					"pathName": "pages/tousu/tousu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mydetail/mydetail",
+					"pathName": "pages/mydetail/mydetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mendianfirsttop/mendianfirsttop",
+					"pathName": "pages/mendianfirsttop/mendianfirsttop",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shopduihuan/shopduihuan",
+					"pathName": "pages/shopduihuan/shopduihuan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/duihuanhou/duihuanhou",
+					"pathName": "pages/duihuanhou/duihuanhou",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tuijian/tuijian",
+					"pathName": "pages/tuijian/tuijian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/duihuanhou/duihuanhou",
+					"pathName": "pages/duihuanhou/duihuanhou",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mendiantop/mendiantop",
+					"pathName": "pages/mendiantop/mendiantop",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/indexlist/indexlist",
+					"pathName": "pages/indexlist/indexlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mendian/mendian",
+					"pathName": "pages/mendian/mendian",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/erweima/erweima",
+					"pathName": "pages/erweima/erweima",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/kaitong/kaitong",
+					"pathName": "pages/kaitong/kaitong",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/yumoney/yumoney",
+					"pathName": "pages/yumoney/yumoney",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/kaitong/kaitong",
+					"pathName": "pages/kaitong/kaitong",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/indexxiangqing/indexxiangqing",
+					"pathName": "pages/indexxiangqing/indexxiangqing",
+					"scene": null
+				}
+			]
+		}
+	}
+}

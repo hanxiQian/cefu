@@ -1,0 +1,148 @@
+/* pages/kaitong/kaitong.wxss */
+.kaitong{
+  color:rgb(133, 135, 136);
+  font-size:30rpx;
+  width:100%;
+  height:40rpx;
+  align-items: center;
+  margin-top:30rpx;
+  margin-bottom:40rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.kaitong .active{
+  border-bottom: 1px solid #3d84f0;
+  color: rgb(22, 90, 236);
+}
+.kaitong text{
+    border-bottom: 1px solid #fff;
+  padding: 20rpx;
+  display: inline-block;
+  text-align: center;
+}
+.kaitong text:first-child{
+  /* border-right:1px solid rgb(133, 135, 136); */
+}
+.biaodan{
+  width:90%;
+  margin:0 auto;
+}
+.biaodan .name{
+  display: flex;
+  font-size:30rpx;
+  height:100rpx;
+  border-bottom: 1px solid #ebe8e8;
+  padding-top:100rpx;
+}
+
+
+/* 单选框的样式 */
+radio-group{
+  margin-left:30rpx;
+}
+radio-group radio{
+ margin-right:60rpx;
+}
+/* 未选中的样式 */
+radio-group radio .wx-radio-input{
+  border-radius: 50%;
+  width:35rpx;
+  height:35rpx;
+}
+/* 选中后的样式 */
+radio-group radio .wx-radio-input.wx-radio-input-checked{
+  background: #d7d8da;
+}
+.biaodan .name:last-child text:last-child{
+background:#d7d8da;
+color:black;
+width:200rpx;
+height:60rpx;
+line-height:60rpx;
+text-align: center;
+border-radius: 10rpx;
+/* margin-left:320rpx; */
+}
+.biaodan .name text{
+  height:52rpx;
+  line-height:52rpx;
+  width:20%;
+  text-align: right;
+
+}
+.biaodan .name input{
+  height:40rpx;
+  line-height:40rpx;
+  padding-left:20rpx;
+  width: 57%;
+}
+.cancel{
+  display: flex;
+  margin-top:85rpx;
+  align-items: center;
+  justify-content: space-around;
+}
+.cancel view:first-child{
+background:#c7c8c9;
+width:200rpx;
+height:80rpx;
+color:black;
+font-size:30rpx;
+border-radius: 10rpx;
+line-height:80rpx;
+text-align: center;
+}
+
+.name button{
+  font-size: 26rpx;
+height: 65rpx;
+line-height: 65rpx;
+
+}
+.cancel view button{
+background:#3d84f0;
+width:200rpx;
+height:80rpx;
+color:white;
+font-size:30rpx;
+border-radius: 10rpx;
+line-height:80rpx;
+text-align: center;
+}
+.yanzhn{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.num{
+  background: #04c273;
+  color: #fff;
+  padding: 10rpx 30rpx;
+  border-radius: 20rpx;
+  width: 33%;
+}
+.numen{
+  background: #f57d2d;
+  color: #fff;
+  text-align: center;
+  font-size: 32rpx;
+   padding: 10rpx 40rpx;
+  border-radius: 20rpx;
+}
+.nameyan{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

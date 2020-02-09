@@ -1,0 +1,3 @@
+<!--pages/erweima/erweima.wxml-->
+<image src="http://qr.liantu.com/api.php?text=15291856676" hidden="{{change}}" bindtap="erweima"></image>
+<image src="http://qr.liantu.com/api.php?text=15291856676" hidden="{{!change}}" bindtap="erweima2"></image>

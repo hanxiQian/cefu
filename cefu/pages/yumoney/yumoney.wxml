@@ -1,0 +1,37 @@
+<!--pages/jiscore/jiscore.wxml-->
+<!-- <view class="return"> 
+    <image src="../../imgs/2.jpg" bindtap="returnmy"></image>
+</view> -->
+<view>
+  <view class="two">
+    <view>可用余额</view>
+    <view>￥{{yumoney}}</view>
+  </view>
+  <view class="threebox">
+    <view class="three">
+      <image src="../../imgs/jiscore.jpg"></image>
+      <text>余额明细</text>
+    </view>
+    <view class="four">近三个月</view>
+  </view>
+  <view class="zhuanfa" wx:for="{{list}}" wx:key="item" data-index="{{index}}">
+    <view>
+    <text></text>
+      <text>{{item.typename}}</text>
+      <text>{{item.count}}</text>
+    </view>
+    <view>
+      <text></text>
+      <text>{{item.created_at}}</text>
+      <text>{{item.count}}</text>
+    </view>
+        <view>
+      <text>{{item.balance_type_name}}</text>
+      <text></text>
+      <text>余额类型</text>
+    </view>
+  </view>
+</view>
+<view class="zanwu" hidden="{{creditjilv}}">
+  <image src="/imgs/noneBg.png"></image>
+</view>

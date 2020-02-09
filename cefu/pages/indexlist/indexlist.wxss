@@ -1,0 +1,31 @@
+/* pages/indexlist/indexlist.wxss */
+page{
+  background:gray;
+}
+.box{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size:30rpx;
+  margin:10rpx auto;
+  justify-content: space-between;
+}
+.box-bottom{
+  display: flex;
+  flex-direction: column;
+  width: 91%;
+height: 80rpx;
+padding-left: 20rpx;
+}
+.box-top{
+  width:49%;
+  height:400rpx;
+  background:white;
+  margin-bottom:10rpx;
+}
+.box-top image{
+width: 88%;
+height: 300rpx;
+margin-left: 26rpx;
+margin-top: 10rpx;
+}

@@ -1,0 +1,42 @@
+<!--pages/shopduihuan/shopduihuan.wxml-->
+<view class="top">
+  <view class="box">
+    <view class="boxleft">
+      <image src="{{product.images}}"></image>
+    </view>
+    <view class="boxright">
+      <text class="boxrightop">{{product.desc}}</text>
+      <view>
+        <text>1件</text>
+        <text>{{product.price}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="box">
+    <view class="boxleft">
+      <image src="../../imgs/head.jpg"></image>
+    </view>
+    <view class="boxright">
+      <text class="boxrightop">介绍介绍介绍介绍介绍介绍介绍 介绍介绍介绍</text>
+      <view>
+        <text>2件</text>
+        <text>500积分</text>
+      </view>
+    </view>
+  </view> -->
+</view>
+<view class="duihuan">
+  <view class="duihuantop">
+    <text>共1件</text>
+    <text>合计:</text>
+    <text>{{product.price}}积分</text>
+  </view>
+  <view class="duihuanmiddle">
+    <image bindtap="dufn" src="../../imgs/duihuan.png"></image>
+  </view>
+<view class="duihuanbottom">
+<view>
+<text>兑换说明</text>
+</view>
+</view>
+</view>

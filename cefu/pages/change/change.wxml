@@ -1,0 +1,114 @@
+<!--pages/change/change.wxml-->
+<view class='title'>
+  <view>
+    <image src='../../imgs/jifen1.jpg'></image>
+    <text>我的积分</text>
+    <text>{{credit}}</text>
+  </view>
+  <view>
+    <image src='../../imgs/jifen2.jpg'></image>
+    <text bindtap="duihuan">兑换记录</text>
+    <!-- <text>点击查看</text> -->
+  </view>
+</view>
+<!-- 轮播图 -->
+<swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+
+  <block wx:for="{{bnrUrl}}" wx:for-index="index" wx:key="key">
+    <swiper-item>
+      <image src='{{item.images}}' bindtap="tiaoimg" class='u-img-slide' data-url="{{item.linkurl}}" mode='aspectFill' class="logo"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 轮播 -->
+<view class="timeshoppbinner">
+<swiper class='u-wrp-bnr' vertical="true"  indicator-dots='{{false}}' autoplay='true' interval='2000' duration='1000' circular='true'>
+  <block wx:for="{{bnrUrl2}}" wx:for-index="index" wx:key="key">
+    <swiper-item>
+<text>{{item}}</text>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<!-- 限时抢购 -->  
+<view class='timeshopp'>
+  <image src='../../imgs/3.png'></image>
+</view>
+
+<!-- 限时抢购导航 -->
+<view class='today'>
+
+  <block wx:for="{{miaoshaprolist}}" wx:key="{{item}}">
+    <navigator url="/pages/score/score?id={{item.id}}">
+    <view class="todaybox" bindtap="score" data-index="{{index}}" data-id="{{item.id}}">
+      <view class="today_left">
+        <image src='{{item.images}}'></image>
+      </view>
+      <view class="today_right">
+        <view>{{item.name}}</view>
+        <view>
+          <text></text>
+        </view>
+        <view>
+          <text></text>
+          <text></text>
+          <text></text>
+          <text></text>
+        </view>
+                   <text class="price">积分{{item.price}}</text>
+        <!-- <view>
+          <image src="../../imgs/cheng.jpg"></image>20</view> -->
+      </view>
+    </view>
+    
+      </navigator>
+  </block>
+
+</view>
+<!-- 生活区 -->
+<view class='timeshopp'>
+  <image src='../../imgs/life.jpg'></image>
+</view>
+<!-- 生活区列表 -->
+<view class="lift-list">
+  <block wx:for="{{creditprolist}}" wx:key="{{item}}">
+  <navigator url="/pages/score/score?id={{item.id}}">
+    <view class="life" data-id="{{item.id}}">
+      <view class="todaybox">
+        <view class="today_left">
+          <view class="today-leftleft">
+            <image src='{{item.images}}' bindtap="score" data-index="{{index}}"></image>
+          </view>
+        </view>
+        <view class="today_right">
+          <view>{{item.name}}
+          </view>
+          <view>
+            <text></text>
+          </view>
+          <view>
+            <text></text>
+            <text></text>
+            <text></text>
+          </view>
+          <view class="bottomprice">
+            <text class="price">积分{{item.price}}</text>
+            </view>
+            <!-- <view class="bottompricechild">
+                <text bindtap="minus" data-index="{{index}}">-</text>
+            <text>{{item.salescount}}</text>
+            <text bindtap="add" data-index="{{index}}">+</text>
+            </view> -->
+        </view>
+      </view>
+    </view>
+    </navigator>
+  </block>
+</view>
+<!-- 购物车 -->
+<!-- <view class="shopcar">
+  <view>合计：
+    <text>￥{{total}}</text>
+  </view>
+  <view>去结算</view>
+</view> -->

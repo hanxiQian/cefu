@@ -1,0 +1,22 @@
+<view class="box">
+<view class="top">
+      <!-- <image src="../../imgs/2.jpg" bindtap="returnmy"></image> -->
+      <text>附近门店</text>
+</view>
+<view class="show">
+      <image src="../../imgs/line.jpg"></image>
+      <text>门店展示</text>
+      <image src="../../imgs/line.jpg"></image>
+</view>
+<view class="img">
+  <image src="{{showimg}}"></image>
+</view>
+<view class="position">
+    <view>{{positiontext}}</view>
+    <view>电话：<text>{{positionphone}}</text><image src="../../imgs/phone.jpg"></image></view>
+    <view>地址：<text>{{positionadress}}</text>
+    <image src="../../imgs/map.jpg"  bindtap="map"></image>
+    </view>
+</view>
+
+</view>

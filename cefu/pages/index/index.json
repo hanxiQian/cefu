@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "公司首页",
+  "usingComponents":{
+    "shouquan":"../../components/shouquan"
+  }
+}

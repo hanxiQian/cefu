@@ -1,0 +1,53 @@
+
+<view class="jindou">
+  <view class="jindouimg">
+    <image src="../../imgs/jindoured.png" alt=""></image>
+  </view>
+  <view class="jindouyhd">
+    已获得
+    <text class="jindounum">{{jindou}}</text>个金豆
+  </view>
+  <view class="jindouNav">
+    <view class="jindouNavList" wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">
+      <text>{{item}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 金豆收入明细 -->
+<view hidden='{{currentTab!==0}}'>
+  <view class="jindouconBig jindouconBigLeft" id="jindouconBigLeft"  wx:for="{{add}}" wx:key="{{item}}">
+
+    <block class="jindoushouruList" >
+      <view class="jindoucon" >
+        <view class="jindouconleft">
+          <text class="jindouconcon">{{item.typename}}</text>
+          <text class="jindoutime">{{item.created_at}}</text>
+        </view>
+        <view class="jindouconright">+
+          <text>{{item.count}}</text>个</view>
+      </view>
+    </block>
+  </view>
+</view>
+<!-- 金豆支出明细 -->
+<view hidden='{{currentTab!==1}}'>
+  <view class="jindouconBig jindouconBigRight" wx:for="{{dcre}}" wx:key="{{item}}">
+    <view class="jindoucon" >
+      <view class="jindouconleft">
+        <text class="jindouconcon">{{item.typename}}</text>
+        <text class="jindoutime">{{item.created_at}}</text>
+      </view>
+      <view class="jindouconright">-
+        <text>{{item.count}}</text>个</view>
+    </view>
+    <!-- <view class="jindoucon">
+      <view class="jindouconleft">
+        <text class="jindouconcon">每日收藏</text>
+        <text class="jindoutime">2019-09-23 18:41:11</text>
+      </view>
+      <view class="jindouconright">-
+        <text>10</text>个</view>
+    </view> -->
+  </view>
+</view>

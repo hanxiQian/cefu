@@ -1,0 +1,67 @@
+<shouquan key='{{key}}'></shouquan>
+<!-- 轮播图 -->
+<swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+  <block wx:for="{{bnrUrl}}" wx:for-index="index" wx:key="key">
+    <swiper-item>
+      <image src='{{item.images}}' bindtap="tonewperson" class='u-img-slide' mode='aspectFill' class="logo"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 今日推荐 -->
+<!-- 今日推荐 -->
+<!-- <view class='today'>
+    <view wx:for="{{todaydata}}" wx:key = "key" class="navindex {{currentid==item.id?'active':''}}" bindtap="todayclicktoday">
+      <view id="{{item.id}}">{{item.name}}</view>
+    </view>
+</view> -->
+<!-- 列表信息 -->
+<view class="box">
+
+  <view class='list-box'>
+
+    <!-- <view class='list' bindtap="shopxiangqing" wx:for="{{prolist}}" data-index="{{index}}" wx:key = "key">
+    <view>
+    <view class="listimg">
+    <image src='{{item. images}}'></image>
+    </view>
+        <view class='list-bottom'>
+            <view class='list-first'>{{item.name}}</view>
+            <view>材质：足金</view>
+            <view>重量:约{{item.weight}}克</view>
+        </view>
+    </view>
+    <view>
+    </view>
+</view> -->
+    <view  wx:for="{{todaydata}}" wx:key = "key" data-id="{{item.id}}" data-bid="{{item.bid}}"  data-pid="{{item.pid}}" >
+<navigator url="/pages/indexlist/indexlist?bid={{item.bid}}&pid={{item.pid}}&id={{item.id}}" class="xilienav">
+      <image src="{{item.images}}"></image>
+      <text>{{item.name}}</text>
+       </navigator>
+    </view>
+  </view>
+</view>
+<view class="mendianimg"><image src="../../imgs/mendiannew.png"></image></view>
+
+<view class="mendianbottom">
+<view class='list' wx:for="{{mendianlist}}" bindtap="goMessage" data-id="{{item.id}}" wx:key="{{index}}">
+<view class="listimg">
+<image src='{{item.images}}'></image>
+</view>
+<view class='list-bottom'>
+<view class='list-first'>
+<text style="font-size:28rpx;">名称：</text>
+<text style="color:#333;"> {{item.name}}</text>
+</view>
+<view>
+<text style="font-size:28rpx;">类别：</text>
+<text style="color:#333;"> {{item.material}}</text>
+</view>
+<view>
+<text style="font-size:28rpx;">重量：</text>
+<text style="color:#333;"> {{item.weight}}克</text>
+</view>
+</view>
+</view>
+</view>
+

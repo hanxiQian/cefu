@@ -1,0 +1,64 @@
+<!-- 轮播图 -->
+<swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+
+  <block wx:for="{{bnrUrl}}" wx:for-index="index" wx:key="key">
+    <swiper-item>
+      <image src='{{item.images}}' bindtap="tiaoimg" class='u-img-slide' data-url="{{item.linkurl}}" mode='aspectFill' class="logo"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 滚动条 -->
+<view class="score">
+  <view>
+    <image src="../../imgs/1.jpg"></image>
+  </view>
+  <view class="scoredong">
+    <!-- 字幕滚动 -->
+    <view class="pad_25">
+      <view class=" dis_f ali_ct">
+        <view class="clr_g flex1">
+          <scroll-view bindscrolltoupper='scrolltxt'>
+            <view class="scrolltxt clr_g">
+              <view class="marquee_box">
+                <view class="marquee_text" style="transform: translateX(-{{marqueeDistance}}rpx)">
+                  <text class="clr_g" wx:key='{{index}}' wx:for='{{text}}'>{{item.content}}</text>
+                 
+                </view>
+              </view>
+            </view>
+          </scroll-view>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+
+  <view>
+    <image src="../../imgs/1.jpg"></image>
+  </view>
+</view>
+<!-- 商品介绍 -->
+<view class="shangpin">
+  <view>商品介绍</view>
+  <text>{{ops.desc}}</text>
+</view>
+
+
+<!-- 商品介绍 -->
+<view class="business_heading">
+  <!-- <view class="business_heading_detail {{item.typeId == currentId ? 'active':''}}" wx:for="{{section}}" wx:key="id" id='{{item.typeId}}' catchtap='handleTap'> -->
+    <view class="business_heading_detail">
+    <view class="line">商品详情</view>
+    <view class="opsition_line"></view>
+  </view>
+</view>
+<!-- 商品详情 -->
+<view class="mykehu" hidden='{{currentId!=1}}'>
+  <rich-text nodes="{{ops.content}}"></rich-text>
+</view>
+
+<!-- <view class="conversion_boton">
+<view class="conversion" bindtap="shopduihuan">立即兑换</view>
+
+</view> -->

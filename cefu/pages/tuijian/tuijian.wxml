@@ -1,0 +1,9 @@
+<!--pages/tuijian/tuijian.wxml-->
+<view class="box">
+<view class="one">
+<image src="../../imgs/tuijian2.jpg"></image>
+</view>
+<button class="two" open-type="share">
+立即邀请
+</button>
+</view>

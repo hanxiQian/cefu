@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/change/change",
+    "pages/mendian/mendian",
+    "pages/my/my",
+    "pages/score/score",
+    "pages/mydetail/mydetail",
+    "pages/about/about",
+    "pages/kaitong/kaitong",
+    "pages/jiscore/jiscore",
+    "pages/yumoney/yumoney",
+    "pages/fujin/fujin",
+    "pages/shopcar/shopcar",
+    "pages/tuijian/tuijian",
+    "pages/mendiantop/mendiantop",
+    "pages/mendianfirsttop/mendianfirsttop",
+    "pages/tousu/tousu",
+    "pages/newperson/newperson",
+    "pages/shopduihuan/shopduihuan",
+    "pages/duihuanhou/duihuanhou",
+    "pages/indexlist/indexlist",
+    "pages/erweima/erweima",
+    "pages/jindou/jindou",
+    "pages/shuoming/shuoming",
+    "pages/indexxiangqing/indexxiangqing"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#818181",
+    "selectedColor": "#b5af95",
+    "font-size": "60rpx",
+"list": [
+  {
+    "pagePath": "pages/index/index",
+    "text": "首页",
+    "iconPath": "imgs/4.png",
+    "selectedIconPath": "imgs/4-1.png"
+  },
+  {
+    "pagePath": "pages/change/change",
+    "text": "兑换",
+    "iconPath": "imgs/2.png",
+    "selectedIconPath": "imgs/2-1.png"
+  },
+  {
+    "pagePath": "pages/mendiantop/mendiantop",
+    "text": "门店",
+    "iconPath": "imgs/3-1.png",
+    "selectedIconPath": "imgs/3-2.png"
+  },
+  {
+    "pagePath": "pages/my/my",
+    "text": "我的",
+    "iconPath": "imgs/1.png",
+    "selectedIconPath": "imgs/1-1.png"
+  }
+]
+  },
+  "sitemapLocation": "sitemap.json",
+  "navigationStyle": "custom"
+}

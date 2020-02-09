@@ -1,0 +1,163 @@
+/* pages/mendiantop/mendiantop.wxss */
+
+/* .top{
+width: 95%;
+height: 69rpx;
+line-height: 90rpx;
+display: flex;
+align-items: center;
+text-align: center;
+color: black;
+margin: 21rpx auto;
+font-size: 32rpx;
+}
+.top view{
+width: 69%;
+height: 95rpx;
+border: 1px solid #b8af73;
+border-radius: 20rpx;
+}
+.two{
+  width:100%;
+height: 410rpx;
+  margin-top:30rpx;
+}
+.two image{
+  width:100%;
+height: 410rpx;
+}
+.three{
+  margin-top:10rpx;
+  font-size:30rpx;
+  margin-left:20rpx;
+}
+.four{
+width: 95%;
+height: 69rpx;
+line-height: 90rpx;
+display: flex;
+align-items: center;
+text-align: center;
+color: black;
+margin: 21rpx auto;
+font-size: 32rpx;
+}
+.four view{
+width: 69%;
+height: 95rpx;
+border: 1px solid #b8af73;
+border-radius: 20rpx;
+} */
+
+.top {
+  width: 95%;
+  line-height: 20rpx;
+  margin: 21rpx auto;
+  padding-top: 20rpx;
+  padding-left: 20rpx;
+  display: flex;
+  font-size: 35rpx;
+}
+
+.top .topone view {
+  width: 57rpx;
+  color: #b8af73;
+  height: 10rpx;
+}
+
+.top .topright {
+  width: 90rpx;
+  height: 50rpx;
+  line-height: 37rpx;
+  text-align: center;
+}
+
+.top .topone view:nth-child(1) {
+  border-top: 1px solid #b8af73;
+  border-bottom: 1px solid #b8af73;
+}
+
+.top .topone view:nth-child(2) {
+  border-bottom: 1px solid #b8af73;
+  border-top: 1px solid #b8af73;
+  margin-top: 10rpx;
+}
+
+.two {
+  width: 100%;
+  height: 410rpx;
+  margin-top: 30rpx;
+}
+
+.two image {
+  width: 100%;
+  height: 410rpx;
+}
+
+.three {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.three .threeview {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.three .threeview .map {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.three .threeview .map image {
+  width: 52rpx;
+  height: 48rpx;
+  margin-right: 120rpx;
+  vertical-align: top;
+}
+
+.three .threeview view:nth-child(2) {
+  width: 168rpx;
+  height: 73rpx;
+  line-height: 67rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+.three .threeview view:nth-child(1){
+  width: 55%;
+  line-height: 73rpx;
+} 
+.three .threeview:nth-child(2) view:nth-child(2) {
+  border: 1px solid #b8af73;
+}
+
+.three .threeview view:nth-child(3) {
+  border: 1px solid #b8af73;
+  width: 170rpx;
+  height: 73rpx;
+  line-height: 67rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+.four {
+  width: 95%;
+  height: 69rpx;
+  line-height: 90rpx;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: black;
+  margin: 21rpx auto;
+  font-size: 32rpx;
+}
+
+.four view {
+  width: 69%;
+  height: 95rpx;
+  border: 1px solid #b8af73;
+  border-radius: 20rpx;
+}

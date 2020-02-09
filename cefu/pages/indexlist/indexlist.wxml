@@ -1,0 +1,13 @@
+<!--pages/indexlist/indexlist.wxml-->
+<view class="box">
+  <view class="box-top" bindtap="xiangqing" wx:key='{{index}}' wx:for="{{prolist}}" data-id="{{item.id}}">
+    <navigator url="/pages/mendianfirsttop/mendianfirsttop?id={{item.id}}">
+      <image src="{{item.images}}"></image>
+      <view class="box-bottom">
+        <text>名称：{{item.name}}</text>
+        <text>克重：{{item.weight}}</text>
+      </view>
+    </navigator>
+  </view>
+ 
+</view>

@@ -1,0 +1,29 @@
+
+<view>
+  <view class="top">
+    <view class="topone">
+      <view></view>
+      <view></view>
+    </view>
+    <view class="topright">列表</view>
+  </view>
+</view>
+<!-- <view wx:if="{{show}}"> -->
+<view wx:for="{{list}}">
+  <view class="two">
+    <image src="{{item.img}}"></image>
+  </view>
+  <view class="three">
+    <view class="threeview">
+      <view>店名:{{item.name}}</view>
+      <view class="map">
+      <!-- <image src="../../imgs/map.jpg" data-index="{{index}}" bindtap="mapclick" ></image> -->
+      </view>
+      <view bindtap="location" data-id="{{item.id}}" data-index="{{index}}">一键导航</view>
+    </view>
+    <view class="threeview">
+      <view>电话：{{item.phone}}</view>
+      <view bindtap="calling" data-id="{{item.id}}" data-index="{{index}}">一键拨号</view>
+    </view>
+  </view>
+</view>

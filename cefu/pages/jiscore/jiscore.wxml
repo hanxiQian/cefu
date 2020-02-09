@@ -1,0 +1,33 @@
+<!--pages/jiscore/jiscore.wxml-->
+<!-- <view class="return"> 
+    <image src="../../imgs/2.jpg" bindtap="returnmy"></image>
+</view> -->
+<view>
+
+  <view class="two">
+    <text>{{credit}}</text>
+    <text>分</text>
+  </view>
+  <view class="threebox">
+    <view class="three">
+      <image src="../../imgs/jiscore.jpg"></image>
+      <text>积分明细</text>
+    </view>
+    <view class="four">近三个月</view>
+  </view>
+  <view class="zhuanfa" wx:for="{{list}}" wx:key="{{index}}">
+    <view>
+      <text></text>
+      <text>{{item.typename}}</text>
+      <text>{{item.count}}</text>
+    </view>
+    <view>
+      <text>{{item.created_at}}</text>
+      <text></text>
+      <text>积分总额：{{credit}}</text>
+    </view>
+  </view>
+</view>
+<view class="zanwu" hidden="{{creditjilv}}">
+  <image src="/imgs/noneBg.png"></image>
+</view>

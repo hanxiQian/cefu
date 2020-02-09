@@ -1,0 +1,61 @@
+<view class='titlebox'>
+</view>
+<view class="tuijian" bindtap="tuijianpeople">
+  <image src="../../imgs/1.png"></image>
+  <text>推荐好友注册会员</text>
+</view>
+<view class="head22">
+  <image src="{{userinformation.avatar? userinformation.avatar:'../../imgs/head.jpg'}}"></image>
+</view>
+<view class="user">
+<view class="userchild">
+  <view>昵称：{{userinformation.nickname ? userinformation.nickname:"用户名"}}</view>
+  <view>积分：{{userinformation.credit?userinformation.credit:0}}分</view>
+</view>
+<view>
+    <view bindtap="kaitong" wx:if = "{{userinformation.mid ==0 ? true:false}}">
+  开通或绑定已有会员
+    </view>
+    <view wx:if = "{{userinformation.mid ==0 ? false:true}}">{{pnonenumber}}</view>
+</view>
+</view>
+
+<!-- 兑换记录 -->
+<view class="duihuan">
+  <view bindtap="duihuanhou">
+    <image src="../../imgs/1.png"></image>
+    <text>兑换记录</text>
+  </view>
+  <view bindtap="jiscore" data-credit="{{userinformation.credit}}">
+    <image src="../../imgs/1.png"></image>
+    <text>积分明细</text>
+  </view>
+  <view>
+    <image src="../../imgs/1.png"></image>
+    <text>积分说明</text>
+  </view>
+  <view>
+    <image src="../../imgs/1.png"></image>
+    <text>我的消息</text>
+  </view>
+  <view>
+    <image src="../../imgs/1.png"></image>
+    <text>我的心愿墙</text>
+  </view>
+  <view>
+    <image src="../../imgs/1.png"></image>
+    <text>我的收藏</text>
+  </view>
+  <view bindtap="member">
+    <image src="../../imgs/1.png"></image>
+    <text>会员说明</text>
+  </view>
+  <view bindtap="tousu">
+    <image src="../../imgs/1.png"></image>
+    <text>服务投诉</text>
+  </view>
+</view>
+<!-- 浪漫七夕 -->
+<view class="romantic">
+  <image src="../../imgs/head.jpg"></image>
+</view>

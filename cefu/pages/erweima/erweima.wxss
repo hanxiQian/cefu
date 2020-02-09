@@ -1,0 +1,9 @@
+/* pages/erweima/erweima.wxss */
+image{
+  width:100rpx;
+  height:100rpx;
+}
+image:nth-child(2){
+  width:500rpx;
+  height:500rpx;
+}

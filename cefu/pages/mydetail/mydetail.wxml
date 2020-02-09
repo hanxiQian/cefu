@@ -1,0 +1,37 @@
+    <!-- 轮播图 -->
+<!-- <swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+  <block wx:for="{{bnrUrl}}" wx:for-index="index">
+    <swiper-item>
+      <image src='{{item.url}}' class='u-img-slide' mode='aspectFill' class="logo"></image>
+    </swiper-item>
+  </block>
+</swiper> -->
+<!-- ----------------------- -->
+<view class="box">
+<view>选择门店:</view>
+<view class='select_box'>
+    <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index].name}}</text>
+        <!-- <image class='select_img {{selectShow&&"select_img_rotate"}}' src='../../images/b2.png'  background-size="contain"></image>  -->
+    </view>
+    <view class='option_box' style='height:{{selectShow?(selectData.length>5?325:selectData.length*80):0}}rpx;'>
+        <text class='option' wx:for='{{selectData}}' wx:key='{{index}}' data-index='{{index}}' catchtap='optionTap'>{{item.name}}</text>
+    </view>
+</view>
+</view>
+<view class="menimg">
+<image src="{{imgmendian}}"></image>
+</view>
+<!-- 地图 -->
+<view class="map">
+<view class="ditu" hover-class="none" hover-stop-propagation="false" style="width: 100%; height: 100%;">
+
+<map id="map" longitude="{{longitude}}" latitude=" {{latitude}}" markers="{{markers}}" scale="13" show-location style="width: 100%; height: 100vh;"></map>
+</view>
+</view>
+<view class="foot">
+      <view bindtap="calling">咨询</view>
+      <view bindtap="location">一键导航</view>
+</view>
+
+

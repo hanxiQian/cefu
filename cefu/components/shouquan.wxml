@@ -1,0 +1,14 @@
+
+<!-- 登录授权页 -->
+<!-- <view class=""> -->
+<view class="login" wx-if='{{key}}'>
+  <view class="loginbox">
+    <text>登录并授权</text>
+    <text>申请获取以下权限</text>
+    <text>获得你的公开信息（昵称，头像）</text>
+    <view>
+      <image src="../imgs/indextan.jpg"></image>
+    </view>
+    <button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信账号一键登录</button>
+  </view>
+</view>

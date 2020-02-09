@@ -1,0 +1,170 @@
+/* pages/index/index.wxss */
+page{
+  background:#f7f7f7;
+}
+.userinfo {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.userinfo-avatar {
+width: 128rpx;
+height: 128rpx;
+margin: 20rpx;
+border-radius: 50%;
+}
+
+.userinfo-nickname {
+color: #aaa;
+}
+
+.usermotto {
+margin-top: 200px;
+}
+
+.logo {
+width: 100%;
+height: 360rpx;
+display: block;
+}
+
+.u-wrp-bnr{
+height: 360rpx;
+}
+/* 今日推荐 */
+.today {
+/* background: green; */
+height: 100rpx;
+line-height: 100rpx;
+flex: 1;
+display: -webkit-box;
+overflow-x: scroll;
+overflow: auto;
+-webkit-overflow-scrolling: touch;
+font-size:30rpx;
+padding-bottom:3rpx;
+padding-left:10rpx;
+}
+/* .today .navindex2{
+border-bottom: 2px solid red;
+} */
+.today .navindex.active{
+  border-bottom: 2px solid red;
+}
+/* .today .navindex{
+  border-bottom: 2px solid transparent;
+} */
+.today view {
+width: 190rpx;
+/* background: red; */
+text-align: center;
+
+}
+/* 列表 */
+.box{
+  width: 100%;
+  background: white;
+  /* height:384rpx; */
+  padding-top:47rpx;
+}
+.list-box{
+  display: flex;
+  width:100%;
+  flex-wrap: wrap;
+  background: white;
+  /* justify-content: space-around; */
+  align-items: center;
+  text-align: center;
+  margin-bottom:11rpx;
+}
+.list-box view{
+  width:22%;
+  font-size:25rpx;
+  margin-left:20rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.list-box view image{
+  width: 127rpx;
+height: 93rpx;
+margin: 0 auto;
+
+  
+}
+.list-box view text{
+  margin-top: 20rpx;
+margin-bottom: 52rpx;
+text-align: center;
+
+}
+.listimg{
+width: 95%;
+margin: 0 auto;
+/* height: 335rpx; */
+/* padding-left: 43rpx; */
+padding-top: 13rpx;
+
+}
+.listimg image{
+width:100%;
+height: 367rpx;
+margin: 0 auto;
+}
+.list-bottom{
+  width:100%;
+  margin:0 auto;
+  text-align: center;
+  /* padding-left:43rpx; */
+  font-size: 26rpx;
+}
+.list{
+background: white;
+border-radius: 10rpx;
+color: gray;
+font-size: 22rpx;
+margin-bottom: 20rpx;
+width: 47%;
+}
+.list-left{
+  margin-right:15rpx;
+}
+.list .list-bottom view{
+line-height: 44rpx;
+padding-left:10rpx;
+padding-right:10rpx;
+/* margin-top: 15rpx; */
+display: flex;
+}
+.list .list-first{
+color: gray;
+/* font-size: 23rpx; */
+}
+.list image{
+width: 100%;
+height: 262rpx;
+margin: 0 auto;
+}
+.mendianimg{
+  width:100%;
+  height:71rpx;
+}
+.mendianimg image{
+  width:100%;
+height: 71rpx;
+
+}
+.mendianbottom{
+  width: 100%;
+  background: white;
+  /* padding-top:53rpx; */
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-around;
+}
+.xilienav{
+  display: flex;
+  flex-direction: column;
+}
